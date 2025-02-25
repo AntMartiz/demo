@@ -1,0 +1,31 @@
+[project]
+name = "capital-soap"
+version = "0.9.0"
+description = "A demo package of an application to obtain the capital of a country using a SOAP web service."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.15.1",
+    "zeep>=4.3.1",
+]
+
+[dependency-groups]
+docs = [
+    "mkdocs>=1.6.1",
+    "mkdocs-macros-plugin>=1.3.7",
+    "mkdocs-material>=9.6.4",
+    "mkdocstrings>=0.28.1",
+]
+
+[project.scripts]
+capital-soap = "demo.cli:app"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["demo"]
+
+[tool.uv]
+package = false

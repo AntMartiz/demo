@@ -1,0 +1,52 @@
+site_name: Capital SOAP
+site_url: https://AntMartiz.github.io/demo
+site_author: AntMartiz
+
+copyright: Copyright &copy; 2024 AntMartiz
+
+repo_url: https://github.com/AntMartiz/demo
+
+nav:
+  - Getting started: 'README.md'
+  - Usage: cli.md
+
+theme:
+  name: "material"
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    logo: fontawesome/solid/flag
+    repo: fontawesome/brands/github-alt
+
+plugins:
+  - search
+  - mkdocstrings
+  - macros
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  version: "0.9.0"
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+  - js/termynal.js
+  - js/custom.js
