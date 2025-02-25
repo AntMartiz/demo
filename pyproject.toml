@@ -1,6 +1,6 @@
 [project]
 name = "capital-soap"
-version = "0.10.0"
+version = "0.11.0"
 description = "A demo package of an application to obtain the capital of a country using a SOAP web service."
 readme = "README.md"
 requires-python = ">=3.10"
